@@ -1,7 +1,8 @@
 import React from 'react'
 
 import UserLayout from './UserLayout'
-function UserItems(props) {
+
+function UserGrid(props) {
     if (props.items.length = 0)
         return (
             <div>
@@ -26,4 +27,4 @@ function UserItems(props) {
     )
 }
 
-export default UserItems
+export default UserGrid

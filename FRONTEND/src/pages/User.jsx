@@ -1,11 +1,12 @@
 import React from 'react'
 
-import UserItems from '../components/UserItems'
+import UserGrid from '../components/UserGrid'
+import usersData from '../dummyUserData'
 function User() {
   return (
-    <div>
-      <UserItems/>
-    </div>
+  
+      <UserGrid />
+   
   )
 }
 
