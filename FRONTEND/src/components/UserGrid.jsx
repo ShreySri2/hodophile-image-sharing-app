@@ -3,28 +3,32 @@ import React from 'react'
 import UserLayout from './UserLayout'
 
 function UserGrid(props) {
-    if (props.items.length = 0)
+    if (props.items.length === 0) {
         return (
             <div>
                 <h2>no user found</h2>
             </div>
         )
-    return (
-        <ul>
-            {
-                props.items.map(user => {
-                    return(
-                    <UserLayout
-                        key={user.id}
-                        id={user.id}
-                        image={user.imaage}
-                        name={user.name}
-                        placeCount={user.places} />)
+    }
+
+    else {
+        return (
+            <div>
+                {
+                    props.items.map(user => {
+                        return (
+                            <UserLayout
+                                key={user.id}
+                                id={user.id}
+                                image={user.image}
+                                name={user.name}
+                                placeCount={user.places} />)
+                    }
+                    )
                 }
-              )
-            } 
-        </ul>
-    )
+            </div>
+        )
+    }
 }
 
 export default UserGrid

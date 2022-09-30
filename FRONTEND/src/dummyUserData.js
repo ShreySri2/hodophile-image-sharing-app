@@ -7,7 +7,7 @@ export const usersData = [
 
     },
 
-    {id: 'ui',
+    {id: 'ug',
     name: 'golu srivastava',
     image: 'https://images.pexels.com/photos/11427593/pexels-photo-11427593.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load',
     places : 4
@@ -15,4 +15,4 @@ export const usersData = [
     },
 
 ]
-export default { usersData }
+export default usersData 
